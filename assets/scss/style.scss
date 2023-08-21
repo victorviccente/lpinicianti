@@ -1,0 +1,25 @@
+@import "./variables", "./reset", "./menu", "./home", "./cards", "./advantage",
+  "./technologies", "./about", "./start", "./footer";
+
+#info-promotion {
+  background-color: $color-main;
+
+  width: 100%;
+  height: auto;
+  padding: $gap-8;
+
+  text-align: center;
+
+  p {
+    color: $color-dark;
+    font-size: 1.8rem;
+
+    @include responsive-tablet {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.grid-layout {
+  @include grid-layout();
+}
